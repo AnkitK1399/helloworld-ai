@@ -1,0 +1,2 @@
+An invoice is a document issued by a seller to a buyer requesting payment for goods or services.
+It contains details such as product name, quantity, price, and total amount.
