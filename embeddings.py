@@ -13,9 +13,8 @@ def load_docs(data_folder='data'):
             with open(filepath,'r', encoding='utf-8') as file:
                 text = file.read()
                 documents.append((filename,text))
-
-    
     return documents
+
 def create_embeddings(documents):
     texts = []
 
