@@ -21,10 +21,13 @@ app.py → command-line interface
 
 ## Run the Project
 
-Create virtual environment:
-python -m venv venv
-venv\Scripts\activate
-Install dependencies:
-pip install -r requirements.txt
-Run the system:
-python app.py
+## Run the Project
+
+1. Clone the repository
+
+2. Create a virtual environment
+
+3. Install required dependencies
+
+4. Run the application
+
