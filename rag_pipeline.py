@@ -12,5 +12,8 @@ def query_rag(question, docs, index):
 
     query_embedding = model.encode(question)
     indices, distances = search_vector(index, query_embedding)
-    doc_index = int(indices[0][0])
-    return docs[doc_index]
+    results = []
+
+    for indx in indices[0]:
+        results.append(docs[int(indx)])
+    return results

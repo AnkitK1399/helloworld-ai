@@ -8,7 +8,7 @@ def create_vector_store(embeddings):
      index.add(embeddings_array)
      return index
 
-def search_vector(index, query_embedding, k=1):
+def search_vector(index, query_embedding, k=3):
     query_vector =  np.array([query_embedding])
     distance, indices = index.search(query_vector, k)
     return distance, indices

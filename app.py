@@ -17,9 +17,13 @@ while True:
         break
 
     # Retrieve relevant document
-    result = query_rag(question, docs, index)
+    results = query_rag(question, docs, index)
 
-    filename, content = result
+   
 
-    print("\nMost relevant document:", filename)
-    print("Content:", content[:300], "...")
+    print("\nTop relevant documents:\n")
+
+    for filename, content in results:
+        print("Document:", filename)
+        print("Content:", content[:200])
+        print()
